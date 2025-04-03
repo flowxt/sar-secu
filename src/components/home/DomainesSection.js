@@ -19,7 +19,7 @@ export default function DomainesSection() {
     {
       title: "PRIVÉ",
       items: ["Villas", "Résidences", "Appartements", "Immeubles"],
-      image: "/images/agent.jpg",
+      image: "/images/agent2.webp",
       alt: "Agent de sécurité surveillant une villa",
     },
     {
@@ -31,7 +31,7 @@ export default function DomainesSection() {
     {
       title: "PUBLIC",
       items: ["Sites sensibles", "Manifestations culturelles et sportives"],
-      image: "/images/agent.jpg",
+      image: "/images/agent4.png",
       alt: "Agent de sécurité surveillant une manifestation publique en Suisse",
     },
   ];

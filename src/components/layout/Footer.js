@@ -133,7 +133,9 @@ export default function Footer() {
                 </Link>
               </li>
               <li className="text-gray-300 hover:text-yellow-500 transition-colors">
-                <Link href="/services#alarmes">Installation d'alarmes</Link>
+                <Link href="/services#boutiques">
+                  Surveillance de boutiques
+                </Link>
               </li>
             </ul>
           </div>

@@ -55,12 +55,6 @@ export default function ServicesSection() {
       description: "Services spécialisés pour tout type d'événement",
       link: "/services#evenementiels",
     },
-    {
-      icon: <IoAlarmOutline size={36} />,
-      title: "INSTALLATION DES DISPOSITIFS D'ALARMES",
-      description: "Solutions de sécurité électronique personnalisées",
-      link: "/services#alarmes",
-    },
   ];
 
   const fadeIn = {

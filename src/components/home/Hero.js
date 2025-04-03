@@ -3,16 +3,28 @@
 import { motion } from "framer-motion";
 import { IoChevronDownOutline, IoCallOutline } from "react-icons/io5";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Hero() {
   return (
-    <div className="relative min-h-screen bg-black overflow-hidden">
-      {/* Fond avec dégradé subtil */}
-      <div className="absolute inset-0 bg-gradient-to-br from-slate-950 to-black z-0"></div>
+    <div className="relative min-h-screen overflow-hidden">
+      {/* Image d'arrière-plan */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/images/agent2.webp"
+          alt="Agent de sécurité"
+          fill
+          priority
+          className="object-cover brightness-[0.4]"
+        />
+      </div>
+
+      {/* Overlay foncé pour améliorer la lisibilité */}
+      <div className="absolute inset-0 bg-black/50 z-1"></div>
 
       {/* Élément décoratif */}
-      <div className="absolute right-0 top-1/4 w-64 h-64 bg-yellow-500/10 rounded-full blur-3xl"></div>
-      <div className="absolute left-0 bottom-1/4 w-96 h-96 bg-yellow-500/5 rounded-full blur-3xl"></div>
+      <div className="absolute right-0 top-1/4 w-64 h-64 bg-yellow-500/10 rounded-full blur-3xl z-2"></div>
+      <div className="absolute left-0 bottom-1/4 w-96 h-96 bg-yellow-500/5 rounded-full blur-3xl z-2"></div>
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="min-h-screen flex flex-col justify-center items-center text-center py-20">
