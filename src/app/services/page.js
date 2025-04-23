@@ -82,7 +82,7 @@ export default function ServicesPage() {
         "Protection des invités de marque",
         "Gestion des flux de personnes",
         "Surveillance discrète",
-        "Coordination avec les services d'urgence",
+        "Coordination avec les services d&apos;urgence",
       ],
     },
     {
@@ -94,9 +94,9 @@ export default function ServicesPage() {
       details: [
         "Rondes préventives à horaires variables",
         "Vérification des systèmes de sécurité",
-        "Intervention rapide en cas d'urgence",
-        "Rédaction de rapports d'intervention",
-        "Coordination avec les forces de l'ordre",
+        "Intervention rapide en cas d&apos;urgence",
+        "Rédaction de rapports d&apos;intervention",
+        "Coordination avec les forces de l&apos;ordre",
       ],
     },
     {
@@ -215,12 +215,32 @@ export default function ServicesPage() {
                   }`}
                 >
                   <Image
-                    src={`/images/agent${(index % 3) + 2}.${
-                      index === 1 ? "png" : "webp"
-                    }`}
+                    src={
+                      service.id === "rondes"
+                        ? "/images/agent-ronde.png"
+                        : service.id === "rapprochee"
+                        ? "/images/garde-corps2.png"
+                        : service.id === "boutiques"
+                        ? "/images/bijou2.png"
+                        : service.id === "evenements"
+                        ? "/images/event.png"
+                        : service.id === "evenementiels"
+                        ? "/images/event.png"
+                        : service.id === "villas"
+                        ? "/images/controle-maison.png"
+                        : service.id === "chantiers"
+                        ? "/images/chantier.png"
+                        : `/images/agent${(index % 3) + 2}.${
+                            index === 1 ? "png" : "webp"
+                          }`
+                    }
                     alt={service.title}
                     fill
-                    className="object-cover"
+                    className={
+                      service.id === "rapprochee"
+                        ? "object-cover"
+                        : "object-cover"
+                    }
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
                 </div>
@@ -239,7 +259,8 @@ export default function ServicesPage() {
               <span className="text-yellow-500">SAR Security</span>
             </h2>
             <p className="text-lg text-white/80 max-w-2xl mx-auto">
-              Notre engagement envers l'excellence et la satisfaction du client
+              Notre engagement envers l&apos;excellence et la satisfaction du
+              client
             </p>
             <div className="w-24 h-1 bg-yellow-500 mx-auto mt-6"></div>
           </div>
@@ -290,7 +311,7 @@ export default function ServicesPage() {
       <section className="py-20 bg-yellow-500">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">
-            Besoin d'un service de sécurité sur mesure ?
+            Besoin d&apos;un service de sécurité sur mesure ?
           </h2>
           <p className="text-xl text-black/80 max-w-2xl mx-auto mb-8">
             Contactez nos experts pour une consultation personnalisée et un

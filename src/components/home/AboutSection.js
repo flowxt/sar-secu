@@ -66,8 +66,8 @@ export default function AboutSection() {
                 NOTRE MISSION
               </h3>
               <p className="text-white/80">
-                Protection des biens et des personnes avec un niveau d'exigence
-                et de professionnalisme irréprochable.
+                Protection des biens et des personnes avec un niveau
+                d&apos;exigence et de professionnalisme irréprochable.
               </p>
             </div>
 
@@ -95,20 +95,17 @@ export default function AboutSection() {
           >
             <div className="relative h-[500px] rounded-lg overflow-hidden shadow-xl">
               <Image
-                src="/images/agent-securite.jpg"
+                src="/images/background-sarsecurity.jpg"
                 alt="Directeur de SAR Security"
                 fill
                 className="object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/90 to-black/50"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/10 to-black/30"></div>
               <div className="absolute inset-0 flex flex-col justify-end p-8">
                 <div className="w-16 h-1 bg-yellow-500 mb-4"></div>
-                <h3 className="text-2xl font-bold text-white">
-                  Sidnei Ribeiro
-                </h3>
-                <p className="text-yellow-500 mb-2">Directeur et fondateur</p>
-                <p className="text-white/90 text-sm">
-                  Ancien militaire de la Légion Étrangère et expert en sécurité
+                <h3 className="text-2xl font-bold text-white">SAR Security</h3>
+                <p className="text-yellow-500 mb-2">
+                  Agence de sécurité privée à Genève
                 </p>
               </div>
             </div>

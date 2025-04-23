@@ -130,7 +130,7 @@ export default function ContactPage() {
                     <div>
                       <h3 className="text-white font-medium">Adresse</h3>
                       <p className="text-white/70">
-                        Rue du Rhône 69, 1204 Genève, Suisse
+                        Rue Butini 15, 1202 Genève, Suisse
                       </p>
                     </div>
                   </div>
@@ -141,10 +141,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="text-white font-medium">Téléphone</h3>
-                      <p className="text-white/70">+41 22 301 00 00</p>
-                      <p className="text-white/70">
-                        +41 79 823 45 67 (Urgences)
-                      </p>
+                      <p className="text-white/70">+41 79 850 15 78</p>
                     </div>
                   </div>
 
@@ -154,8 +151,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="text-white font-medium">Email</h3>
-                      <p className="text-white/70">info@sarsecurity.ch</p>
-                      <p className="text-white/70">devis@sarsecurity.ch</p>
+                      <p className="text-white/70">contact@sar-security.ch</p>
                     </div>
                   </div>
 
@@ -366,7 +362,7 @@ export default function ContactPage() {
       {/* Carte de localisation */}
       <section className="h-[400px] relative">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2761.356622719083!2d6.147624076895494!3d46.20281787902624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c652e7f80a163%3A0xa9070234f57dff12!2sRue%20du%20Rh%C3%B4ne%2069%2C%201204%20Gen%C3%A8ve!5e0!3m2!1sfr!2sch!4v1695296423427!5m2!1sfr!2sch"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2761.2123097137397!2d6.1459126765202785!3d46.20576687901628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c651ee09da6d7%3A0x61c3bfb88c42af23!2sRue%20Butini%2015%2C%201202%20Gen%C3%A8ve%2C%20Suisse!5e0!3m2!1sfr!2sch!4v1695296423427!5m2!1sfr!2sch"
           width="100%"
           height="100%"
           style={{ border: 0 }}

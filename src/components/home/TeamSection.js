@@ -91,7 +91,7 @@ export default function TeamSection() {
           >
             <div className="relative h-[500px] rounded-lg overflow-hidden shadow-xl">
               <Image
-                src="/images/agent-securite.jpg"
+                src="/images/test-sidnei.png"
                 alt="Directeur de SAR Security"
                 fill
                 className="object-cover"

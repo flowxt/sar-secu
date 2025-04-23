@@ -19,19 +19,19 @@ export default function DomainesSection() {
     {
       title: "PRIVÉ",
       items: ["Villas", "Résidences", "Appartements", "Immeubles"],
-      image: "/images/agent2.webp",
+      image: "/images/controle-maison.png",
       alt: "Agent de sécurité surveillant une villa",
     },
     {
       title: "PROFESSIONNEL",
       items: ["Bureaux", "Entrepôts", "Chantiers", "Événements"],
-      image: "/images/agent-securite.jpg",
+      image: "/images/agent-ronde.png",
       alt: "Agent de sécurité surveillant un entrepôt",
     },
     {
       title: "PUBLIC",
       items: ["Sites sensibles", "Manifestations culturelles et sportives"],
-      image: "/images/agent4.png",
+      image: "/images/manif2.png",
       alt: "Agent de sécurité surveillant une manifestation publique en Suisse",
     },
   ];
@@ -62,9 +62,9 @@ export default function DomainesSection() {
         >
           <p className="text-white/80 text-lg max-w-4xl mx-auto text-center">
             Forts de notre expertise et de notre savoir-faire, nous intervenons
-            en Suisse et à l'étranger dans tous les domaines de la sécurité pour
-            répondre à vos besoins spécifiques et vous garantir une protection
-            optimale.
+            en Suisse et à l&apos;étranger dans tous les domaines de la sécurité
+            pour répondre à vos besoins spécifiques et vous garantir une
+            protection optimale.
           </p>
           <p className="text-white/80 text-lg max-w-4xl mx-auto text-center mt-4">
             Que vous soyez un particulier, un professionnel ou une organisation
@@ -90,7 +90,7 @@ export default function DomainesSection() {
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-black/40"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/10 to-black/40"></div>
 
                 <div className="absolute bottom-0 left-0 right-0 p-6">
                   <div className="w-12 h-1 bg-yellow-500 mb-4"></div>

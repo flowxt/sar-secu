@@ -25,7 +25,7 @@ export default function Footer() {
               alt="SAR Security Logo"
               width={180}
               height={60}
-              className="h-16 w-auto"
+              className="h-16 w-auto brightness-0 invert"
             />
             <p className="mt-4 text-gray-300">
               SAR Security est une société de sécurité polyvalente et dynamique
@@ -129,7 +129,7 @@ export default function Footer() {
               </li>
               <li className="text-gray-300 hover:text-yellow-500 transition-colors">
                 <Link href="/services#evenements">
-                  Surveillance d'événements
+                  Surveillance d&apos;événements
                 </Link>
               </li>
               <li className="text-gray-300 hover:text-yellow-500 transition-colors">
@@ -152,7 +152,7 @@ export default function Footer() {
                   className="text-yellow-500 mt-1 flex-shrink-0"
                 />
                 <span className="text-gray-300">
-                  Rue de Genève 123, 1200 Genève, Suisse
+                  Rue Butini 15, 1202 Genève, Suisse
                 </span>
               </li>
               <li className="flex items-center gap-3">
@@ -161,10 +161,10 @@ export default function Footer() {
                   className="text-yellow-500 flex-shrink-0"
                 />
                 <a
-                  href="tel:+41223010000"
+                  href="tel:+41798501578"
                   className="text-gray-300 hover:text-yellow-500"
                 >
-                  +41 22 301 00 00
+                  +41 79 850 15 78
                 </a>
               </li>
               <li className="flex items-center gap-3">
@@ -176,7 +176,7 @@ export default function Footer() {
                   href="mailto:contact@sarsecurity.ch"
                   className="text-gray-300 hover:text-yellow-500"
                 >
-                  contact@sarsecurity.ch
+                  contact@sar-security.ch
                 </a>
               </li>
             </ul>

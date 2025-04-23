@@ -17,7 +17,7 @@ export default function BodyguardPage() {
         {/* Image d'arrière-plan */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/agent4.png"
+            src="/images/garde-corps2.png"
             alt="Bodyguard professionnel"
             fill
             priority
@@ -144,7 +144,7 @@ export default function BodyguardPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="relative h-[500px] rounded-lg overflow-hidden">
               <Image
-                src="/images/agent3.png"
+                src="/images/garde-corps2.png"
                 alt="Agent de sécurité professionnel"
                 fill
                 className="object-cover"
@@ -163,7 +163,7 @@ export default function BodyguardPage() {
             <div className="space-y-6">
               {[
                 {
-                  title: "Équipe d&apos;Élite",
+                  title: "Équipe d'Élite",
                   description:
                     "Nos agents sont rigoureusement sélectionnés et formés selon les standards internationaux les plus élevés.",
                 },
@@ -215,18 +215,18 @@ export default function BodyguardPage() {
             {[
               {
                 quote:
-                  "L&apos;équipe de SAR Security a assuré ma protection lors d&apos;une série d&apos;événements publics. Leur professionnalisme et leur discrétion ont été irréprochables.",
-                author: "C.M., Chef d&apos;Entreprise",
+                  "L'équipe de SAR Security a assuré ma protection lors d'une série d'événements publics. Leur professionnalisme et leur discrétion ont été irréprochables.",
+                author: "C.M., Chef d'Entreprise",
               },
               {
                 quote:
-                  "Après avoir reçu des menaces, j&apos;ai fait appel à SAR Security. Leur réactivité et leur approche personnalisée m&apos;ont permis de retrouver ma tranquillité.",
+                  "Après avoir reçu des menaces, j'ai fait appel à SAR Security. Leur réactivité et leur approche personnalisée m'ont permis de retrouver ma tranquillité.",
                 author: "L.D., Personnalité Publique",
               },
               {
                 quote:
                   "Pour la sécurité de notre événement VIP, SAR Security a déployé une équipe parfaitement coordonnée et efficace. Un service haut de gamme.",
-                author: "S.K., Organisateur d&apos;Événements",
+                author: "S.K., Organisateur d'Événements",
               },
             ].map((testimonial, index) => (
               <div

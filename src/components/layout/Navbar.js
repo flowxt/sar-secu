@@ -5,10 +5,12 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { IoMenuOutline, IoCloseOutline, IoCallOutline } from "react-icons/io5";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -43,6 +45,16 @@ export default function Navbar() {
     { href: "/contact", label: "Contact" },
   ];
 
+  const isActive = (href) => {
+    if (href === "/" && pathname === "/") {
+      return true;
+    }
+    if (href !== "/" && pathname.startsWith(href)) {
+      return true;
+    }
+    return false;
+  };
+
   return (
     <nav className={navbarClasses}>
       <div className="container mx-auto px-4 flex justify-between items-center">
@@ -53,7 +65,7 @@ export default function Navbar() {
             alt="SAR Security Logo"
             width={120}
             height={40}
-            className="h-12 w-auto"
+            className="h-12 w-auto brightness-0 invert"
           />
         </Link>
 
@@ -64,15 +76,20 @@ export default function Navbar() {
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className="text-white hover:text-yellow-500 transition-colors"
+                  className={`text-white hover:text-yellow-500 transition-colors relative ${
+                    isActive(link.href) ? "font-medium" : ""
+                  }`}
                 >
                   {link.label}
+                  {isActive(link.href) && (
+                    <span className="absolute bottom-[-5px] left-0 w-full h-[2px] bg-yellow-500"></span>
+                  )}
                 </Link>
               </li>
             ))}
           </ul>
           <a
-            href="tel:+41223010000"
+            href="tel:+41798501578"
             className="flex items-center gap-2 bg-yellow-500 hover:bg-yellow-600 text-black font-medium px-4 py-2 rounded-md transition-colors"
           >
             <IoCallOutline size={20} />
@@ -105,7 +122,9 @@ export default function Navbar() {
               <li key={link.href} className="w-full">
                 <Link
                   href={link.href}
-                  className="text-white text-xl hover:text-yellow-500 transition-colors block py-2 border-b border-gray-800"
+                  className={`text-white text-xl hover:text-yellow-500 transition-colors block py-2 border-b border-gray-800 ${
+                    isActive(link.href) ? "text-yellow-500 font-medium" : ""
+                  }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {link.label}
@@ -114,7 +133,7 @@ export default function Navbar() {
             ))}
             <li className="mt-8 w-full">
               <a
-                href="tel:+41223010000"
+                href="tel:+41798501578"
                 className="flex items-center justify-center gap-2 bg-yellow-500 hover:bg-yellow-600 text-black font-medium px-6 py-3 rounded-md transition-colors w-full"
                 onClick={() => setIsMenuOpen(false)}
               >

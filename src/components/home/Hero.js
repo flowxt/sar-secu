@@ -11,7 +11,7 @@ export default function Hero() {
       {/* Image d'arrière-plan */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/agent2.webp"
+          src="/images/bijou2.png"
           alt="Agent de sécurité"
           fill
           priority
