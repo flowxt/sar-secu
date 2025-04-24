@@ -37,9 +37,6 @@ export const metadata = {
     "sécurité commerces",
     "surveillance villas",
   ],
-  alternates: {
-    canonical: "/",
-  },
   authors: [{ name: "SAR Security" }],
   creator: "SAR Security",
   publisher: "SAR Security",

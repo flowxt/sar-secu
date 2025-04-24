@@ -2,6 +2,16 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaCalendarAlt, FaArrowLeft } from "react-icons/fa";
 
+export const metadata = {
+  title:
+    "Protection rapprochée : quand faire appel à un bodyguard ? | SAR Security",
+  description:
+    "Les situations qui nécessitent l'intervention d'un agent de protection rapprochée et comment choisir le bon service à Genève.",
+  alternates: {
+    canonical: "https://sar-security.ch/blog/protection-rapprochee",
+  },
+};
+
 export default function ProtectionRapprocheeArticle() {
   return (
     <>

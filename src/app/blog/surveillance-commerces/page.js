@@ -9,6 +9,16 @@ import {
   FaEye,
 } from "react-icons/fa";
 
+export const metadata = {
+  title:
+    "Prévention des vols dans les commerces : conseils d'experts | SAR Security",
+  description:
+    "Stratégies et mesures efficaces pour protéger votre commerce contre les vols et les incivilités. Conseils de sécurité par des experts.",
+  alternates: {
+    canonical: "https://sar-security.ch/blog/surveillance-commerces",
+  },
+};
+
 export default function SurveillanceCommercesArticle() {
   return (
     <>

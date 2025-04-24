@@ -2,6 +2,15 @@ import Link from "next/link";
 import Image from "next/image";
 import { FaCalendarAlt, FaChevronRight } from "react-icons/fa";
 
+export const metadata = {
+  title: "Blog Sécurité | Conseils et Actualités | SAR Security Genève",
+  description:
+    "Articles, conseils et actualités sur la sécurité privée à Genève. Protection des biens et des personnes, sécurité événementielle, bodyguard.",
+  alternates: {
+    canonical: "https://sar-security.ch/blog",
+  },
+};
+
 // Liste des articles de blog (à terme, ça pourrait être généré automatiquement)
 const blogPosts = [
   {

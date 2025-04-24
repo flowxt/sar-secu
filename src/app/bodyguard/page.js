@@ -9,6 +9,15 @@ import {
   IoIdCardOutline,
 } from "react-icons/io5";
 
+export const metadata = {
+  title: "Service Bodyguard & Protection Rapprochée | SAR Security Genève",
+  description:
+    "Protection rapprochée et services bodyguard de haute qualité à Genève. Agents hautement qualifiés pour votre sécurité personnelle.",
+  alternates: {
+    canonical: "https://sar-security.ch/bodyguard",
+  },
+};
+
 export default function BodyguardPage() {
   return (
     <>

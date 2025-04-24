@@ -2,6 +2,16 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaCalendarAlt, FaUser, FaTags, FaArrowLeft } from "react-icons/fa";
 
+export const metadata = {
+  title:
+    "La sécurité événementielle à Genève : enjeux et solutions | SAR Security",
+  description:
+    "Découvrez les principaux défis et les solutions modernes pour assurer la sécurité de vos événements à Genève. Conseils d'experts.",
+  alternates: {
+    canonical: "https://sar-security.ch/blog/securite-evenementielle",
+  },
+};
+
 export default function SecuriteEvenementielleArticle() {
   return (
     <>

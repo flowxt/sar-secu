@@ -12,6 +12,15 @@ import {
   IoCheckmarkCircleOutline,
 } from "react-icons/io5";
 
+export const metadata = {
+  title: "Services de Sécurité Professionnels | SAR Security Genève",
+  description:
+    "Découvrez nos services de sécurité sur mesure à Genève : surveillance, protection rapprochée, garde de villas, sécurité événementielle et plus.",
+  alternates: {
+    canonical: "https://sar-security.ch/services",
+  },
+};
+
 export default function ServicesPage() {
   const services = [
     {
@@ -219,20 +228,20 @@ export default function ServicesPage() {
                       service.id === "rondes"
                         ? "/images/agent-ronde.png"
                         : service.id === "rapprochee"
-                        ? "/images/garde-corps2.png"
-                        : service.id === "boutiques"
-                        ? "/images/bijou2.png"
-                        : service.id === "evenements"
-                        ? "/images/event.png"
-                        : service.id === "evenementiels"
-                        ? "/images/event.png"
-                        : service.id === "villas"
-                        ? "/images/controle-maison.png"
-                        : service.id === "chantiers"
-                        ? "/images/chantier.png"
-                        : `/images/agent${(index % 3) + 2}.${
-                            index === 1 ? "png" : "webp"
-                          }`
+                          ? "/images/garde-corps2.png"
+                          : service.id === "boutiques"
+                            ? "/images/bijou2.png"
+                            : service.id === "evenements"
+                              ? "/images/event.png"
+                              : service.id === "evenementiels"
+                                ? "/images/event.png"
+                                : service.id === "villas"
+                                  ? "/images/controle-maison.png"
+                                  : service.id === "chantiers"
+                                    ? "/images/chantier.png"
+                                    : `/images/agent${(index % 3) + 2}.${
+                                        index === 1 ? "png" : "webp"
+                                      }`
                     }
                     alt={service.title}
                     fill
