@@ -195,7 +195,7 @@ export default function SurveillanceCommercesArticle() {
 
               <div className="my-8 relative h-80 rounded-lg overflow-hidden">
                 <Image
-                  src="/images/commercial.png"
+                  src="/images/bijou2.png"
                   alt="Surveillance de grande surface"
                   fill
                   className="object-cover"
