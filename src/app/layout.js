@@ -80,13 +80,31 @@ export const metadata = {
     },
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon-16x16.png", sizes: "16x16" },
+      { url: "/favicon-32x32.png", sizes: "32x32" },
+    ],
     shortcut: "/favicon.ico",
     apple: "/apple-touch-icon.png",
-    other: {
-      rel: "apple-touch-icon",
-      url: "/apple-touch-icon.png",
-    },
+    other: [
+      {
+        rel: "apple-touch-icon",
+        url: "/apple-touch-icon.png",
+      },
+      {
+        rel: "manifest",
+        url: "/site.webmanifest",
+      },
+      {
+        rel: "android-chrome",
+        url: "/android-chrome-192x192.png",
+      },
+      {
+        rel: "android-chrome",
+        url: "/android-chrome-512x512.png",
+      },
+    ],
   },
   verification: {
     google: "à-remplacer-par-votre-code-de-vérification",
