@@ -6,9 +6,6 @@ import {
   IoLocationOutline,
   IoCallOutline,
   IoMailOutline,
-  IoLogoFacebook,
-  IoLogoInstagram,
-  IoLogoLinkedin,
 } from "react-icons/io5";
 
 export default function Footer() {
@@ -31,32 +28,6 @@ export default function Footer() {
               SAR Security est une société de sécurité polyvalente et dynamique
               basée à Genève en Suisse.
             </p>
-            <div className="flex space-x-4 mt-6">
-              <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-300 hover:text-yellow-500 transition-colors"
-              >
-                <IoLogoFacebook size={24} />
-              </a>
-              <a
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-300 hover:text-yellow-500 transition-colors"
-              >
-                <IoLogoInstagram size={24} />
-              </a>
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-300 hover:text-yellow-500 transition-colors"
-              >
-                <IoLogoLinkedin size={24} />
-              </a>
-            </div>
           </div>
 
           {/* Liens rapides */}

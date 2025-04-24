@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://sar-security.ch
+
+# Sitemaps
+Sitemap: https://sar-security.ch/sitemap.xml
