@@ -338,7 +338,7 @@ export default function SecuriteEvenementielleArticle() {
                   <div className="bg-slate-900 rounded-lg overflow-hidden shadow-xl transition-transform duration-300 group-hover:translate-y-[-5px]">
                     <div className="relative h-48">
                       <Image
-                        src="/images/agent4.png"
+                        src="/images/garde-corps2.png"
                         alt="Protection rapprochée"
                         fill
                         className="object-cover"

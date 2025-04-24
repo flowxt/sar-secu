@@ -10,7 +10,7 @@ const blogPosts = [
     excerpt:
       "Découvrez les principaux défis et les solutions modernes pour assurer la sécurité de vos événements à Genève.",
     date: "15 mars 2024",
-    image: "/images/agent2.webp",
+    image: "/images/manif2.png",
     category: "Événementiel",
   },
   {
@@ -19,7 +19,7 @@ const blogPosts = [
     excerpt:
       "Les situations qui nécessitent l'intervention d'un agent de protection rapprochée et comment choisir le bon service.",
     date: "2 mars 2024",
-    image: "/images/agent4.png",
+    image: "/images/garde-corps2.png",
     category: "Bodyguard",
   },
   {
@@ -28,7 +28,7 @@ const blogPosts = [
     excerpt:
       "Stratégies et mesures efficaces pour protéger votre commerce contre les vols et les incivilités.",
     date: "18 février 2024",
-    image: "/images/securite.webp",
+    image: "/images/bijouterie.png",
     category: "Protection commerciale",
   },
 ];

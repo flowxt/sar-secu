@@ -26,6 +26,7 @@ export default function ContactPage() {
     submitted: false,
     success: false,
     message: "",
+    loading: false,
   });
 
   const [errors, setErrors] = useState({});
@@ -52,27 +53,59 @@ export default function ContactPage() {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (validate()) {
-      // Simulation d'envoi de formulaire
       setFormStatus({
-        submitted: true,
-        success: true,
-        message:
-          "Votre message a été envoyé avec succès. Nous vous contacterons dans les plus brefs délais.",
+        submitted: false,
+        success: false,
+        message: "",
+        loading: true,
       });
 
-      // Réinitialiser le formulaire
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        subject: "",
-        message: "",
-        service: "",
-      });
+      try {
+        const response = await fetch("/api/send", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        });
+
+        const result = await response.json();
+
+        if (result.success) {
+          setFormStatus({
+            submitted: true,
+            success: true,
+            message:
+              "Votre message a été envoyé avec succès. Nous vous contacterons dans les plus brefs délais.",
+            loading: false,
+          });
+
+          // Réinitialiser le formulaire
+          setFormData({
+            name: "",
+            email: "",
+            phone: "",
+            subject: "",
+            message: "",
+            service: "",
+          });
+        } else {
+          throw new Error(result.error || "Une erreur est survenue");
+        }
+      } catch (error) {
+        setFormStatus({
+          submitted: true,
+          success: false,
+          message:
+            "Une erreur s'est produite lors de l'envoi de votre message. Veuillez réessayer ou nous contacter par téléphone.",
+          loading: false,
+        });
+        console.error("Erreur d'envoi:", error);
+      }
     }
   };
 
@@ -188,6 +221,25 @@ export default function ContactPage() {
                       Message envoyé!
                     </h3>
                     <p className="text-white/80">{formStatus.message}</p>
+                  </div>
+                ) : formStatus.submitted && !formStatus.success ? (
+                  <div className="bg-red-500/10 border border-red-500/30 rounded-lg p-6 text-center">
+                    <IoAlertCircle
+                      size={50}
+                      className="text-red-500 mx-auto mb-4"
+                    />
+                    <h3 className="text-xl font-semibold text-white mb-2">
+                      Erreur
+                    </h3>
+                    <p className="text-white/80">{formStatus.message}</p>
+                    <button
+                      onClick={() =>
+                        setFormStatus({ ...formStatus, submitted: false })
+                      }
+                      className="mt-4 bg-slate-800 text-white px-6 py-2 rounded-md hover:bg-slate-700 transition-colors"
+                    >
+                      Réessayer
+                    </button>
                   </div>
                 ) : (
                   <form onSubmit={handleSubmit} className="space-y-6">
@@ -345,10 +397,43 @@ export default function ContactPage() {
                       </p>
                       <button
                         type="submit"
-                        className="bg-yellow-500 hover:bg-yellow-600 text-black font-medium px-8 py-3 rounded-md transition-colors inline-flex items-center justify-center"
+                        disabled={formStatus.loading}
+                        className={`bg-yellow-500 hover:bg-yellow-600 text-black font-medium px-8 py-3 rounded-md transition-colors inline-flex items-center justify-center ${
+                          formStatus.loading
+                            ? "opacity-70 cursor-not-allowed"
+                            : ""
+                        }`}
                       >
-                        <IoSendOutline className="mr-2" size={18} />
-                        Envoyer
+                        {formStatus.loading ? (
+                          <>
+                            <svg
+                              className="animate-spin -ml-1 mr-3 h-5 w-5 text-black"
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                            >
+                              <circle
+                                className="opacity-25"
+                                cx="12"
+                                cy="12"
+                                r="10"
+                                stroke="currentColor"
+                                strokeWidth="4"
+                              ></circle>
+                              <path
+                                className="opacity-75"
+                                fill="currentColor"
+                                d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                              ></path>
+                            </svg>
+                            Envoi en cours...
+                          </>
+                        ) : (
+                          <>
+                            <IoSendOutline className="mr-2" size={18} />
+                            Envoyer
+                          </>
+                        )}
                       </button>
                     </div>
                   </form>
