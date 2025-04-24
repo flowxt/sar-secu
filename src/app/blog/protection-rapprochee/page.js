@@ -185,7 +185,7 @@ export default function ProtectionRapprocheeArticle() {
 
               <div className="my-8 relative h-80 rounded-lg overflow-hidden">
                 <Image
-                  src="/images/guard2.png"
+                  src="/images/sidnei-garde.jpg"
                   alt="Agent de sécurité professionnel"
                   fill
                   className="object-cover"
