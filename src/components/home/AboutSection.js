@@ -95,7 +95,7 @@ export default function AboutSection() {
           >
             <div className="relative h-[500px] rounded-lg overflow-hidden shadow-xl">
               <Image
-                src="/images/background-sarsecurity.jpg"
+                src="/images/background-sarSecurity.jpg"
                 alt="Directeur de SAR Security"
                 fill
                 className="object-cover"
