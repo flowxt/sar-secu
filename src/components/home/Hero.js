@@ -65,7 +65,7 @@ export default function Hero() {
                 Demander un devis
               </Link>
               <a
-                href="tel:+41223010000"
+                href="tel:+41798501578"
                 className="bg-transparent hover:bg-white/10 text-white border border-white/30 font-medium px-8 py-4 rounded-md transition-colors inline-flex items-center justify-center text-lg"
               >
                 <IoCallOutline size={20} className="mr-2" />
