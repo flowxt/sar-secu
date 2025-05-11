@@ -23,6 +23,9 @@ body {
   color: var(--foreground);
   font-family: var(--font-inter);
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
 }
 
 p, span, a, li, input, button, textarea {

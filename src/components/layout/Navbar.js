@@ -27,9 +27,11 @@ export default function Navbar() {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   const navbarClasses = `fixed w-full z-50 transition-all duration-300 ${
-    scrolled
-      ? "bg-black/95 backdrop-blur-sm py-2 shadow-lg"
-      : "bg-black/80 md:bg-transparent py-4"
+    isMenuOpen
+      ? "bg-black py-2"
+      : scrolled
+        ? "bg-black/95 backdrop-blur-sm py-2 shadow-lg"
+        : "bg-black/80 md:bg-transparent py-4"
   }`;
 
   const menuVariants = {
@@ -112,11 +114,19 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         <motion.div
-          className="fixed inset-0 bg-black bg-opacity-95 md:hidden flex flex-col pt-24 px-8"
+          className="fixed inset-0 bg-black md:hidden flex flex-col pt-24 px-8 z-40"
           initial="closed"
           animate={isMenuOpen ? "open" : "closed"}
           variants={menuVariants}
+          style={{ backgroundColor: "black" }}
         >
+          <button
+            className="absolute top-6 right-6 text-white hover:text-yellow-500 transition-colors"
+            onClick={() => setIsMenuOpen(false)}
+            aria-label="Fermer le menu"
+          >
+            <IoCloseOutline size={32} />
+          </button>
           <ul className="flex flex-col space-y-6 items-center">
             {navLinks.map((link) => (
               <li key={link.href} className="w-full">
