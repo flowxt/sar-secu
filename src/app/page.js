@@ -16,14 +16,14 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <>
+    <main className="w-full overflow-x-hidden">
       <Hero />
       <AboutSection />
       <ServicesSection />
       <TeamSection />
       <DomainesSection />
       <EngagementSection />
-    </>
+    </main>
   );
 }
 // Test
