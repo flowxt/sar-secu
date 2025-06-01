@@ -14,6 +14,26 @@ export const metadata = {
 // Liste des articles de blog (à terme, ça pourrait être généré automatiquement)
 const blogPosts = [
   {
+    id: "accueil-securise",
+    title:
+      "Accueil sécurisé en entreprise : allier sécurité et image professionnelle",
+    excerpt:
+      "Découvrez comment l'accueil sécurisé peut valoriser l'image de votre entreprise tout en garantissant un niveau de sécurité optimal.",
+    date: "1er juillet 2024",
+    image: "/images/agent2.webp",
+    category: "Accueil sécurisé",
+  },
+  {
+    id: "securite-chantiers",
+    title:
+      "Sécurité sur les chantiers à Genève : prévenir les intrusions et les vols de matériel",
+    excerpt:
+      "Découvrez comment protéger efficacement vos chantiers contre les intrusions et vols de matériel. Solutions adaptées au secteur BTP.",
+    date: "15 juin 2024",
+    image: "/images/chantier.png",
+    category: "Sécurité de chantier",
+  },
+  {
     id: "securite-evenementielle",
     title: "La sécurité événementielle à Genève : enjeux et solutions",
     excerpt:
