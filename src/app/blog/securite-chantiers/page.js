@@ -1,6 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FaCalendarAlt, FaUser, FaTags, FaArrowLeft } from "react-icons/fa";
+import {
+  FaCalendarAlt,
+  FaUser,
+  FaTags,
+  FaArrowLeft,
+  FaShieldAlt,
+  FaEye,
+  FaClock,
+  FaTools,
+  FaCheckCircle,
+} from "react-icons/fa";
 
 export const metadata = {
   title:
@@ -16,7 +26,7 @@ export default function SecuriteChantierArticle() {
   return (
     <>
       {/* Hero Section */}
-      <div className="relative min-h-[50vh] pt-32 pb-16 overflow-hidden">
+      <div className="relative min-h-[60vh] pt-32 pb-20 overflow-hidden">
         {/* Image d'arrière-plan */}
         <div className="absolute inset-0 z-0">
           <Image
@@ -24,40 +34,45 @@ export default function SecuriteChantierArticle() {
             alt="Sécurité de chantier à Genève"
             fill
             priority
-            className="object-cover brightness-[0.3]"
+            className="object-cover brightness-[0.2]"
           />
         </div>
 
-        {/* Overlay foncé */}
-        <div className="absolute inset-0 bg-black/60 z-1"></div>
+        {/* Overlay avec dégradé */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80 z-1"></div>
 
         <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-5xl mx-auto">
             <Link
               href="/blog"
-              className="inline-flex items-center text-yellow-500 hover:text-yellow-400 mb-6 transition-colors"
+              className="inline-flex items-center text-yellow-400 hover:text-yellow-300 mb-8 transition-colors font-medium"
             >
               <FaArrowLeft className="mr-2" />
               Retour aux articles
             </Link>
 
-            <h1 className="text-3xl md:text-5xl font-bold text-white mb-6">
-              Sécurité sur les chantiers à Genève : prévenir les intrusions et
-              les vols de matériel
-            </h1>
+            <div className="bg-black/30 backdrop-blur-sm rounded-2xl p-8 border border-yellow-500/20">
+              <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+                Sécurité sur les{" "}
+                <span className="text-yellow-400">chantiers</span> à Genève
+              </h1>
+              <p className="text-xl md:text-2xl text-white/90 mb-8 leading-relaxed">
+                Prévenir les intrusions et les vols de matériel
+              </p>
 
-            <div className="flex flex-wrap items-center gap-4 md:gap-8 text-white/70 mb-8">
-              <div className="flex items-center">
-                <FaCalendarAlt className="mr-2 text-yellow-500" />
-                <span>15 juin 2024</span>
-              </div>
-              <div className="flex items-center">
-                <FaUser className="mr-2 text-yellow-500" />
-                <span>Par SAR Security</span>
-              </div>
-              <div className="flex items-center">
-                <FaTags className="mr-2 text-yellow-500" />
-                <span>Sécurité de chantier, BTP, Genève</span>
+              <div className="flex flex-wrap items-center gap-6 text-white/80">
+                <div className="flex items-center bg-black/40 px-4 py-2 rounded-full">
+                  <FaCalendarAlt className="mr-2 text-yellow-400" />
+                  <span>15 juin 2024</span>
+                </div>
+                <div className="flex items-center bg-black/40 px-4 py-2 rounded-full">
+                  <FaUser className="mr-2 text-yellow-400" />
+                  <span>Par SAR Security</span>
+                </div>
+                <div className="flex items-center bg-black/40 px-4 py-2 rounded-full">
+                  <FaTags className="mr-2 text-yellow-400" />
+                  <span>Sécurité BTP</span>
+                </div>
               </div>
             </div>
           </div>
@@ -65,11 +80,12 @@ export default function SecuriteChantierArticle() {
       </div>
 
       {/* Article Content */}
-      <section className="py-16 bg-black">
+      <section className="py-20 bg-gradient-to-b from-black to-slate-900">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <article className="prose prose-lg prose-invert prose-yellow mx-auto">
-              <p className="lead text-xl text-white/90">
+          <div className="max-w-5xl mx-auto">
+            {/* Introduction */}
+            <div className="bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 mb-12 border border-slate-700">
+              <p className="text-xl md:text-2xl text-white/90 leading-relaxed">
                 Les chantiers de construction, souvent ouverts et peu éclairés
                 la nuit, représentent des cibles privilégiées pour les
                 intrusions, les vols de matériaux coûteux et les actes de
@@ -77,269 +93,372 @@ export default function SecuriteChantierArticle() {
                 sécurisation des chantiers est devenue un enjeu majeur pour les
                 entreprises de construction.
               </p>
+            </div>
 
-              <h2>Pourquoi la sécurité sur les chantiers est essentielle</h2>
-
-              <p>
-                Les chantiers de construction présentent des vulnérabilités
-                spécifiques qui en font des cibles attractives pour les
-                malfaiteurs :
-              </p>
-
-              <ul>
-                <li>
-                  <strong>Matériaux de valeur</strong> : Cuivre, câbles
-                  électriques, outils professionnels et machines représentent
-                  des sommes importantes facilement revendables.
-                </li>
-                <li>
-                  <strong>Accès difficile à contrôler</strong> : Les chantiers
-                  sont souvent étendus avec de multiples points d&apos;accès,
-                  rendant la surveillance complexe.
-                </li>
-                <li>
-                  <strong>Horaires d&apos;inactivité</strong> : Les nuits,
-                  week-ends et jours fériés laissent les sites sans surveillance
-                  naturelle.
-                </li>
-                <li>
-                  <strong>Impact sur les délais</strong> : Un vol ou un acte de
-                  vandalisme peut retarder considérablement l&apos;avancement
-                  des travaux.
-                </li>
-              </ul>
-
-              <div className="my-8 relative h-96 rounded-lg overflow-hidden">
-                <Image
-                  src="/images/surveillance.png"
-                  alt="Agent de sécurité surveillant un chantier"
-                  fill
-                  className="object-cover"
-                />
+            {/* Section Pourquoi */}
+            <div className="mb-16">
+              <div className="flex items-center mb-8">
+                <div className="bg-yellow-500 p-3 rounded-full mr-4">
+                  <FaShieldAlt className="text-black text-xl" />
+                </div>
+                <h2 className="text-3xl md:text-4xl font-bold text-white">
+                  Pourquoi la sécurité sur les chantiers est essentielle
+                </h2>
               </div>
 
-              <h2>Nos solutions de sécurité pour les chantiers</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 border border-slate-700 hover:border-yellow-500/50 transition-colors">
+                  <div className="flex items-start">
+                    <div className="bg-yellow-500/20 p-3 rounded-lg mr-4 mt-1">
+                      <FaTools className="text-yellow-400 text-lg" />
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold text-white mb-3">
+                        Matériaux de valeur
+                      </h3>
+                      <p className="text-white/80">
+                        Cuivre, câbles électriques, outils professionnels et
+                        machines représentent des sommes importantes facilement
+                        revendables.
+                      </p>
+                    </div>
+                  </div>
+                </div>
 
-              <p>
-                SAR Security propose une gamme complète de services adaptés aux
-                spécificités des chantiers de construction :
-              </p>
+                <div className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 border border-slate-700 hover:border-yellow-500/50 transition-colors">
+                  <div className="flex items-start">
+                    <div className="bg-yellow-500/20 p-3 rounded-lg mr-4 mt-1">
+                      <FaEye className="text-yellow-400 text-lg" />
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold text-white mb-3">
+                        Accès difficile à contrôler
+                      </h3>
+                      <p className="text-white/80">
+                        Les chantiers sont souvent étendus avec de multiples
+                        points d&apos;accès, rendant la surveillance complexe.
+                      </p>
+                    </div>
+                  </div>
+                </div>
 
-              <h3>1. Surveillance par agent de sécurité statique</h3>
+                <div className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 border border-slate-700 hover:border-yellow-500/50 transition-colors">
+                  <div className="flex items-start">
+                    <div className="bg-yellow-500/20 p-3 rounded-lg mr-4 mt-1">
+                      <FaClock className="text-yellow-400 text-lg" />
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold text-white mb-3">
+                        Horaires d&apos;inactivité
+                      </h3>
+                      <p className="text-white/80">
+                        Les nuits, week-ends et jours fériés laissent les sites
+                        sans surveillance naturelle.
+                      </p>
+                    </div>
+                  </div>
+                </div>
 
-              <p>
-                La présence d&apos;un agent de sécurité sur site constitue la
-                solution la plus dissuasive :
-              </p>
-
-              <ul>
-                <li>Présence continue ou selon planning défini</li>
-                <li>Contrôle des accès et vérification des identités</li>
-                <li>Surveillance des zones de stockage de matériaux</li>
-                <li>Intervention immédiate en cas d&apos;intrusion</li>
-                <li>Rapport détaillé des incidents et observations</li>
-              </ul>
-
-              <h3>2. Rondes mobiles de jour comme de nuit</h3>
-
-              <p>
-                Pour les chantiers étendus ou multiples, les rondes mobiles
-                offrent une couverture optimale :
-              </p>
-
-              <ul>
-                <li>Passages réguliers selon un planning aléatoire</li>
-                <li>Vérification de l&apos;intégrité des clôtures et accès</li>
-                <li>
-                  Contrôle de l&apos;éclairage et des dispositifs de sécurité
-                </li>
-                <li>
-                  Coordination avec les forces de l&apos;ordre si nécessaire
-                </li>
-              </ul>
-
-              <h3>3. Contrôle des accès</h3>
-
-              <p>La gestion rigoureuse des entrées et sorties est cruciale :</p>
-
-              <ul>
-                <li>Filtrage des ouvriers, sous-traitants et visiteurs</li>
-                <li>Vérification des autorisations et badges d&apos;accès</li>
-                <li>Contrôle des véhicules entrants et sortants</li>
-                <li>Tenue d&apos;un registre des présences</li>
-              </ul>
-
-              <h3>
-                4. Installation de dispositifs temporaires de vidéosurveillance
-              </h3>
-
-              <p>En partenariat avec des spécialistes, nous proposons :</p>
-
-              <ul>
-                <li>Caméras mobiles avec vision nocturne</li>
-                <li>Système d&apos;alerte en temps réel</li>
-                <li>Enregistrement pour preuves en cas d&apos;incident</li>
-                <li>Surveillance à distance 24h/24</li>
-              </ul>
-
-              <h3>5. Prévention incendie et premiers secours</h3>
-
-              <p>Nos agents sont également formés pour :</p>
-
-              <ul>
-                <li>Détecter les risques d&apos;incendie</li>
-                <li>Intervenir en cas d&apos;urgence médicale</li>
-                <li>Coordonner avec les services d&apos;urgence</li>
-                <li>Assurer la sécurité des personnes présentes</li>
-              </ul>
-
-              <div className="my-8 relative h-96 rounded-lg overflow-hidden">
-                <Image
-                  src="/images/agent3.png"
-                  alt="Équipe de sécurité sur chantier"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-
-              <h2>Une expertise adaptée au secteur du BTP</h2>
-
-              <p>
-                SAR Security travaille en étroite collaboration avec des
-                entreprises de construction locales pour assurer une sécurité
-                efficace sans entraver l&apos;activité :
-              </p>
-
-              <ul>
-                <li>
-                  <strong>Connaissance du secteur</strong> : Nos agents
-                  comprennent les spécificités du BTP et les contraintes
-                  opérationnelles.
-                </li>
-                <li>
-                  <strong>Intervention discrète</strong> : Nous savons nous
-                  adapter au rythme du chantier sans perturber les équipes.
-                </li>
-                <li>
-                  <strong>Respect des règles de sécurité</strong> : Nos agents
-                  sont formés aux règles de sécurité des chantiers (EPI, zones
-                  dangereuses, etc.).
-                </li>
-                <li>
-                  <strong>Flexibilité</strong> : Adaptation des horaires et des
-                  effectifs selon l&apos;évolution du chantier.
-                </li>
-              </ul>
-
-              <h2>Gagner en sérénité et en efficacité</h2>
-
-              <p>
-                Investir dans la sécurité d&apos;un chantier, c&apos;est bien
-                plus que protéger des biens matériels :
-              </p>
-
-              <ul>
-                <li>
-                  <strong>Éviter les retards coûteux</strong> : Un vol ou une
-                  dégradation peut retarder l&apos;ensemble du projet.
-                </li>
-                <li>
-                  <strong>Préserver la réputation</strong> : Un chantier
-                  sécurisé témoigne du professionnalisme de l&apos;entreprise.
-                </li>
-                <li>
-                  <strong>Réduire les coûts d&apos;assurance</strong> : Les
-                  assureurs apprécient les mesures de prévention mises en place.
-                </li>
-                <li>
-                  <strong>Améliorer les conditions de travail</strong> : Les
-                  équipes travaillent plus sereinement dans un environnement
-                  sécurisé.
-                </li>
-              </ul>
-
-              <h2>Un plan de sécurité personnalisé</h2>
-
-              <p>
-                Chaque chantier étant unique, SAR Security propose une approche
-                sur mesure :
-              </p>
-
-              <ol>
-                <li>
-                  <strong>Audit de sécurité</strong> : Évaluation des risques
-                  spécifiques au site et au type de construction.
-                </li>
-                <li>
-                  <strong>Proposition adaptée</strong> : Définition des services
-                  les plus appropriés selon le budget et les contraintes.
-                </li>
-                <li>
-                  <strong>Mise en œuvre progressive</strong> : Déploiement des
-                  mesures de sécurité en phase avec l&apos;avancement du
-                  chantier.
-                </li>
-                <li>
-                  <strong>Suivi et ajustement</strong> : Adaptation continue des
-                  dispositifs selon l&apos;évolution des besoins.
-                </li>
-              </ol>
-
-              <div className="bg-slate-900 p-8 rounded-lg my-8">
-                <h3 className="text-yellow-500 text-2xl font-bold mb-4">
-                  Contactez-nous pour sécuriser votre chantier
-                </h3>
-                <p className="text-white/90 mb-6">
-                  Nos experts en sécurité de chantier sont à votre disposition
-                  pour établir un plan de protection adapté à vos besoins
-                  spécifiques.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Link
-                    href="/contact"
-                    className="bg-yellow-500 hover:bg-yellow-600 text-black font-medium px-6 py-3 rounded-md transition-colors text-center"
-                  >
-                    Demander un devis
-                  </Link>
-                  <Link
-                    href="/services"
-                    className="border border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-black font-medium px-6 py-3 rounded-md transition-colors text-center"
-                  >
-                    Nos services
-                  </Link>
+                <div className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 border border-slate-700 hover:border-yellow-500/50 transition-colors">
+                  <div className="flex items-start">
+                    <div className="bg-yellow-500/20 p-3 rounded-lg mr-4 mt-1">
+                      <FaCheckCircle className="text-yellow-400 text-lg" />
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold text-white mb-3">
+                        Impact sur les délais
+                      </h3>
+                      <p className="text-white/80">
+                        Un vol ou un acte de vandalisme peut retarder
+                        considérablement l&apos;avancement des travaux.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
+            </div>
 
-              <h2>Conclusion</h2>
+            {/* Image centrale */}
+            <div className="my-16 relative h-96 rounded-2xl overflow-hidden shadow-2xl">
+              <Image
+                src="/images/agent-ronde.png"
+                alt="Agent de sécurité en ronde sur chantier"
+                fill
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+              <div className="absolute bottom-6 left-6 text-white">
+                <p className="text-lg font-medium">
+                  Agent de sécurité en ronde sur chantier
+                </p>
+              </div>
+            </div>
 
-              <p>
-                La sécurisation des chantiers de construction à Genève
-                n&apos;est plus une option mais une nécessité. Face à
-                l&apos;augmentation des vols et des intrusions, faire appel à
-                des professionnels de la sécurité permet de protéger
-                efficacement vos investissements tout en maintenant la
-                productivité de vos équipes.
+            {/* Solutions de sécurité */}
+            <div className="mb-16">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+                  Nos solutions de{" "}
+                  <span className="text-yellow-400">sécurité</span> pour les
+                  chantiers
+                </h2>
+                <p className="text-xl text-white/80 max-w-3xl mx-auto">
+                  SAR Security propose une gamme complète de services adaptés
+                  aux spécificités des chantiers de construction
+                </p>
+              </div>
+
+              <div className="space-y-8">
+                {/* Solution 1 */}
+                <div className="bg-gradient-to-r from-slate-800/80 to-slate-700/80 backdrop-blur-sm rounded-2xl p-8 border border-slate-600">
+                  <div className="flex flex-col lg:flex-row items-start gap-8">
+                    <div className="lg:w-2/3">
+                      <div className="flex items-center mb-4">
+                        <span className="bg-yellow-500 text-black font-bold text-lg px-4 py-2 rounded-full mr-4">
+                          01
+                        </span>
+                        <h3 className="text-2xl font-bold text-white">
+                          Surveillance par agent de sécurité statique
+                        </h3>
+                      </div>
+                      <p className="text-white/80 mb-4 text-lg">
+                        La présence d&apos;un agent de sécurité sur site
+                        constitue la solution la plus dissuasive
+                      </p>
+                      <ul className="space-y-2 text-white/70">
+                        <li className="flex items-center">
+                          <FaCheckCircle className="text-yellow-400 mr-3" />
+                          Présence continue ou selon planning défini
+                        </li>
+                        <li className="flex items-center">
+                          <FaCheckCircle className="text-yellow-400 mr-3" />
+                          Contrôle des accès et vérification des identités
+                        </li>
+                        <li className="flex items-center">
+                          <FaCheckCircle className="text-yellow-400 mr-3" />
+                          Surveillance des zones de stockage de matériaux
+                        </li>
+                        <li className="flex items-center">
+                          <FaCheckCircle className="text-yellow-400 mr-3" />
+                          Intervention immédiate en cas d&apos;intrusion
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="lg:w-1/3">
+                      <div className="bg-yellow-500/10 p-6 rounded-xl border border-yellow-500/30">
+                        <FaShieldAlt className="text-yellow-400 text-4xl mb-4" />
+                        <h4 className="text-white font-bold mb-2">
+                          Protection maximale
+                        </h4>
+                        <p className="text-white/70 text-sm">
+                          Dissuasion optimale grâce à une présence physique
+                          permanente
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Solution 2 */}
+                <div className="bg-gradient-to-r from-slate-700/80 to-slate-800/80 backdrop-blur-sm rounded-2xl p-8 border border-slate-600">
+                  <div className="flex flex-col lg:flex-row items-start gap-8">
+                    <div className="lg:w-2/3">
+                      <div className="flex items-center mb-4">
+                        <span className="bg-yellow-500 text-black font-bold text-lg px-4 py-2 rounded-full mr-4">
+                          02
+                        </span>
+                        <h3 className="text-2xl font-bold text-white">
+                          Rondes mobiles de jour comme de nuit
+                        </h3>
+                      </div>
+                      <p className="text-white/80 mb-4 text-lg">
+                        Pour les chantiers étendus ou multiples, les rondes
+                        mobiles offrent une couverture optimale
+                      </p>
+                      <ul className="space-y-2 text-white/70">
+                        <li className="flex items-center">
+                          <FaCheckCircle className="text-yellow-400 mr-3" />
+                          Passages réguliers selon un planning aléatoire
+                        </li>
+                        <li className="flex items-center">
+                          <FaCheckCircle className="text-yellow-400 mr-3" />
+                          Vérification de l&apos;intégrité des clôtures et accès
+                        </li>
+                        <li className="flex items-center">
+                          <FaCheckCircle className="text-yellow-400 mr-3" />
+                          Contrôle de l&apos;éclairage et des dispositifs de
+                          sécurité
+                        </li>
+                        <li className="flex items-center">
+                          <FaCheckCircle className="text-yellow-400 mr-3" />
+                          Coordination avec les forces de l&apos;ordre si
+                          nécessaire
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="lg:w-1/3">
+                      <div className="bg-yellow-500/10 p-6 rounded-xl border border-yellow-500/30">
+                        <FaEye className="text-yellow-400 text-4xl mb-4" />
+                        <h4 className="text-white font-bold mb-2">
+                          Surveillance étendue
+                        </h4>
+                        <p className="text-white/70 text-sm">
+                          Couverture optimale pour les grands chantiers
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Solution 3 */}
+                <div className="bg-gradient-to-r from-slate-800/80 to-slate-700/80 backdrop-blur-sm rounded-2xl p-8 border border-slate-600">
+                  <div className="flex flex-col lg:flex-row items-start gap-8">
+                    <div className="lg:w-2/3">
+                      <div className="flex items-center mb-4">
+                        <span className="bg-yellow-500 text-black font-bold text-lg px-4 py-2 rounded-full mr-4">
+                          03
+                        </span>
+                        <h3 className="text-2xl font-bold text-white">
+                          Contrôle des accès
+                        </h3>
+                      </div>
+                      <p className="text-white/80 mb-4 text-lg">
+                        La gestion rigoureuse des entrées et sorties est
+                        cruciale
+                      </p>
+                      <ul className="space-y-2 text-white/70">
+                        <li className="flex items-center">
+                          <FaCheckCircle className="text-yellow-400 mr-3" />
+                          Filtrage des ouvriers, sous-traitants et visiteurs
+                        </li>
+                        <li className="flex items-center">
+                          <FaCheckCircle className="text-yellow-400 mr-3" />
+                          Vérification des autorisations et badges d&apos;accès
+                        </li>
+                        <li className="flex items-center">
+                          <FaCheckCircle className="text-yellow-400 mr-3" />
+                          Contrôle des véhicules entrants et sortants
+                        </li>
+                        <li className="flex items-center">
+                          <FaCheckCircle className="text-yellow-400 mr-3" />
+                          Tenue d&apos;un registre des présences
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="lg:w-1/3">
+                      <div className="bg-yellow-500/10 p-6 rounded-xl border border-yellow-500/30">
+                        <FaTools className="text-yellow-400 text-4xl mb-4" />
+                        <h4 className="text-white font-bold mb-2">
+                          Accès maîtrisé
+                        </h4>
+                        <p className="text-white/70 text-sm">
+                          Contrôle strict des entrées et sorties
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Expertise BTP */}
+            <div className="bg-gradient-to-br from-yellow-500/10 to-yellow-600/5 backdrop-blur-sm rounded-2xl p-8 mb-16 border border-yellow-500/30">
+              <div className="text-center mb-8">
+                <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+                  Une expertise adaptée au{" "}
+                  <span className="text-yellow-400">secteur du BTP</span>
+                </h2>
+                <p className="text-xl text-white/80 max-w-3xl mx-auto">
+                  SAR Security travaille en étroite collaboration avec des
+                  entreprises de construction locales
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="text-center">
+                  <div className="bg-yellow-500/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <FaShieldAlt className="text-yellow-400 text-2xl" />
+                  </div>
+                  <h3 className="text-lg font-bold text-white mb-2">
+                    Connaissance du secteur
+                  </h3>
+                  <p className="text-white/70 text-sm">
+                    Nos agents comprennent les spécificités du BTP
+                  </p>
+                </div>
+                <div className="text-center">
+                  <div className="bg-yellow-500/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <FaEye className="text-yellow-400 text-2xl" />
+                  </div>
+                  <h3 className="text-lg font-bold text-white mb-2">
+                    Intervention discrète
+                  </h3>
+                  <p className="text-white/70 text-sm">
+                    Adaptation au rythme du chantier
+                  </p>
+                </div>
+                <div className="text-center">
+                  <div className="bg-yellow-500/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <FaTools className="text-yellow-400 text-2xl" />
+                  </div>
+                  <h3 className="text-lg font-bold text-white mb-2">
+                    Respect des règles
+                  </h3>
+                  <p className="text-white/70 text-sm">
+                    Formation aux règles de sécurité des chantiers
+                  </p>
+                </div>
+                <div className="text-center">
+                  <div className="bg-yellow-500/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <FaClock className="text-yellow-400 text-2xl" />
+                  </div>
+                  <h3 className="text-lg font-bold text-white mb-2">
+                    Flexibilité
+                  </h3>
+                  <p className="text-white/70 text-sm">
+                    Adaptation des horaires selon l&apos;évolution
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* CTA Section */}
+            <div className="bg-gradient-to-r from-yellow-500 to-yellow-600 rounded-2xl p-8 mb-16 text-center">
+              <h3 className="text-3xl font-bold text-black mb-4">
+                Contactez-nous pour sécuriser votre chantier
+              </h3>
+              <p className="text-black/80 mb-6 text-lg max-w-2xl mx-auto">
+                Nos experts en sécurité de chantier sont à votre disposition
+                pour établir un plan de protection adapté à vos besoins
+                spécifiques.
               </p>
-
-              <p>
-                SAR Security met son expertise au service des entreprises du BTP
-                pour leur offrir des solutions de sécurité adaptées, discrètes
-                et efficaces. Un investissement dans la sécurité est un levier
-                de performance et de tranquillité d&apos;esprit.
-              </p>
-            </article>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link
+                  href="/contact"
+                  className="bg-black hover:bg-slate-800 text-white font-medium px-8 py-4 rounded-xl transition-colors text-center"
+                >
+                  Demander un devis
+                </Link>
+                <Link
+                  href="/services"
+                  className="border-2 border-black text-black hover:bg-black hover:text-white font-medium px-8 py-4 rounded-xl transition-colors text-center"
+                >
+                  Nos services
+                </Link>
+              </div>
+            </div>
 
             {/* Navigation vers d'autres articles */}
-            <div className="mt-16 pt-8 border-t border-slate-800">
-              <h3 className="text-2xl font-bold text-white mb-6">
+            <div className="mt-16 pt-8 border-t border-slate-700">
+              <h3 className="text-2xl font-bold text-white mb-6 text-center">
                 Articles similaires
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <Link
                   href="/blog/surveillance-commerces"
-                  className="group bg-slate-900 p-6 rounded-lg hover:bg-slate-800 transition-colors"
+                  className="group bg-slate-800/50 backdrop-blur-sm p-6 rounded-xl hover:bg-slate-700/50 transition-colors border border-slate-700 hover:border-yellow-500/50"
                 >
-                  <h4 className="text-lg font-semibold text-white group-hover:text-yellow-500 mb-2">
+                  <h4 className="text-lg font-semibold text-white group-hover:text-yellow-400 mb-2 transition-colors">
                     Prévention des vols dans les commerces
                   </h4>
                   <p className="text-white/70 text-sm">
@@ -348,9 +467,9 @@ export default function SecuriteChantierArticle() {
                 </Link>
                 <Link
                   href="/blog/securite-evenementielle"
-                  className="group bg-slate-900 p-6 rounded-lg hover:bg-slate-800 transition-colors"
+                  className="group bg-slate-800/50 backdrop-blur-sm p-6 rounded-xl hover:bg-slate-700/50 transition-colors border border-slate-700 hover:border-yellow-500/50"
                 >
-                  <h4 className="text-lg font-semibold text-white group-hover:text-yellow-500 mb-2">
+                  <h4 className="text-lg font-semibold text-white group-hover:text-yellow-400 mb-2 transition-colors">
                     Sécurité événementielle à Genève
                   </h4>
                   <p className="text-white/70 text-sm">
