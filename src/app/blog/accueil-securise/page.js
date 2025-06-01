@@ -11,7 +11,7 @@ export const metadata = {
     canonical: "https://sar-security.ch/blog/accueil-securise",
   },
 };
-
+// test
 export default function AccueilSecuriseArticle() {
   return (
     <>
