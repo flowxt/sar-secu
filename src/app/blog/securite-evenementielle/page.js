@@ -48,7 +48,7 @@ export default function SecuriteEvenementielleArticle() {
             <div className="flex flex-wrap items-center gap-4 md:gap-8 text-white/70 mb-8">
               <div className="flex items-center">
                 <FaCalendarAlt className="mr-2 text-yellow-500" />
-                <span>15 mars 2024</span>
+                <span>15 mars 2025</span>
               </div>
               <div className="flex items-center">
                 <FaUser className="mr-2 text-yellow-500" />

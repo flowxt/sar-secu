@@ -65,7 +65,7 @@ export default function AccueilSecuriseArticle() {
               <div className="flex flex-wrap items-center gap-6 text-white/80">
                 <div className="flex items-center bg-black/40 px-4 py-2 rounded-full">
                   <FaCalendarAlt className="mr-2 text-yellow-400" />
-                  <span>1er juillet 2024</span>
+                  <span>30 mai 2025</span>
                 </div>
                 <div className="flex items-center bg-black/40 px-4 py-2 rounded-full">
                   <FaUser className="mr-2 text-yellow-400" />

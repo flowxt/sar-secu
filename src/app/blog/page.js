@@ -19,7 +19,7 @@ const blogPosts = [
       "Accueil sécurisé en entreprise : allier sécurité et image professionnelle",
     excerpt:
       "Découvrez comment l'accueil sécurisé peut valoriser l'image de votre entreprise tout en garantissant un niveau de sécurité optimal.",
-    date: "1er juillet 2024",
+    date: "30 mai 2025",
     image: "/images/agent2.webp",
     category: "Accueil sécurisé",
   },
@@ -29,7 +29,7 @@ const blogPosts = [
       "Sécurité sur les chantiers à Genève : prévenir les intrusions et les vols de matériel",
     excerpt:
       "Découvrez comment protéger efficacement vos chantiers contre les intrusions et vols de matériel. Solutions adaptées au secteur BTP.",
-    date: "15 juin 2024",
+    date: "15 avril 2025",
     image: "/images/chantier.png",
     category: "Sécurité de chantier",
   },
@@ -38,7 +38,7 @@ const blogPosts = [
     title: "La sécurité événementielle à Genève : enjeux et solutions",
     excerpt:
       "Découvrez les principaux défis et les solutions modernes pour assurer la sécurité de vos événements à Genève.",
-    date: "15 mars 2024",
+    date: "15 mars 2025",
     image: "/images/manif2.png",
     category: "Événementiel",
   },
@@ -47,7 +47,7 @@ const blogPosts = [
     title: "Protection rapprochée : quand faire appel à un bodyguard ?",
     excerpt:
       "Les situations qui nécessitent l'intervention d'un agent de protection rapprochée et comment choisir le bon service.",
-    date: "2 mars 2024",
+    date: "2 mars 2025",
     image: "/images/garde-corps2.png",
     category: "Bodyguard",
   },
@@ -56,7 +56,7 @@ const blogPosts = [
     title: "Prévention des vols dans les commerces : conseils d'experts",
     excerpt:
       "Stratégies et mesures efficaces pour protéger votre commerce contre les vols et les incivilités.",
-    date: "18 février 2024",
+    date: "18 février 2025",
     image: "/images/bijouterie.png",
     category: "Protection commerciale",
   },

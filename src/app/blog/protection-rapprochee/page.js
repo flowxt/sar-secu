@@ -45,7 +45,7 @@ export default function ProtectionRapprocheeArticle() {
             </h1>
             <div className="flex items-center text-yellow-500/80 mb-8">
               <FaCalendarAlt className="mr-2" />
-              <span>2 mars 2024</span>
+              <span>2 mars 2025</span>
               <span className="mx-3">•</span>
               <span className="bg-yellow-500 text-black px-3 py-1 rounded-full text-sm font-medium">
                 Bodyguard
