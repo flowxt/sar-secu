@@ -184,7 +184,7 @@ export default function ServiceOrdreFeteNationaleArticle() {
             {/* Image centrale */}
             <div className="my-16 relative h-96 rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="/images/event.png"
+                src="/images/fete-suisse.png"
                 alt="Service d'ordre lors d'événement festif"
                 fill
                 className="object-cover"

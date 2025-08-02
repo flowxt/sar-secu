@@ -184,7 +184,7 @@ export default function SecuriteIncendieArticle() {
             {/* Image centrale */}
             <div className="my-16 relative h-96 rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="/images/agent3.png"
+                src="/images/securite-incendie.png"
                 alt="Formation sécurité incendie"
                 fill
                 className="object-cover"

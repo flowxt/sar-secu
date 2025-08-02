@@ -175,7 +175,7 @@ export default function ControleAccesArticle() {
             {/* Image centrale */}
             <div className="my-16 relative h-96 rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="/images/garde-corps2.png"
+                src="/images/controle-acces.png"
                 alt="Technologies de contrôle d'accès modernes"
                 fill
                 className="object-cover"

@@ -188,7 +188,7 @@ export default function VideosurveillanceEntrepriseArticle() {
             {/* Image centrale */}
             <div className="my-16 relative h-96 rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="/images/agent3.png"
+                src="/images/video-surveillance.png"
                 alt="Système de vidéosurveillance moderne"
                 fill
                 className="object-cover"
