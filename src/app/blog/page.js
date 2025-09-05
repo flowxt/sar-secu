@@ -14,6 +14,16 @@ export const metadata = {
 // Articles de blog statiques
 const blogPosts = [
   {
+    id: "garde-villa-geneve",
+    title: "Garde de villa à Genève : sérénité et protection de votre résidence",
+    excerpt:
+      "Services de garde de villa professionnels à Genève. Protection discrète de votre résidence, surveillance personnalisée et tranquillité d'esprit lors de vos absences.",
+    date: "29 août 2025",
+    category: "Surveillance résidentielle",
+    image: "/images/villa.jpg",
+    slug: "garde-villa-geneve",
+  },
+  {
     id: "service-ordre-fete-nationale",
     title:
       "Service d'ordre pour la fête nationale suisse : sécurité du feu d'artifice",
