@@ -14,6 +14,26 @@ export const metadata = {
 // Articles de blog statiques
 const blogPosts = [
   {
+    id: "securite-fetes-noel",
+    title: "Sécurité pendant les fêtes de Noël : célébrer en toute sérénité",
+    excerpt:
+      "Conseils et services de sécurité pour les fêtes de Noël à Genève. Protection des biens, surveillance d'événements festifs et tranquillité pendant les célébrations.",
+    date: "15 décembre 2025",
+    category: "Sécurité festive",
+    image: "/images/noel.jpg",
+    slug: "securite-fetes-noel",
+  },
+  {
+    id: "securite-manifestations-geneve",
+    title: "Sécurité des manifestations à Genève : service d'ordre professionnel",
+    excerpt:
+      "Services de sécurité pour manifestations et rassemblements à Genève. Gestion des foules, service d'ordre discret et protection des participants.",
+    date: "10 novembre 2025",
+    category: "Service d'ordre",
+    image: "/images/manif.png",
+    slug: "securite-manifestations-geneve",
+  },
+  {
     id: "garde-villa-geneve",
     title: "Garde de villa à Genève : sérénité et protection de votre résidence",
     excerpt:
