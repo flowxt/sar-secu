@@ -1,11 +1,27 @@
 export default async function sitemap() {
-  // URL de base du site
   const baseUrl = "https://sar-security.ch";
-
-  // Timestamp actuel pour lastModified
   const currentDate = new Date();
 
-  // Liste des routes statiques du site
+  const blogSlugs = [
+    "syndic-immeuble-securite",
+    "surveillance-immeubles-geneve",
+    "conciergerie-securisee-coproprietes",
+    "securite-parkings-immeubles",
+    "securite-fetes-noel",
+    "securite-manifestations-geneve",
+    "garde-villa-geneve",
+    "service-ordre-fete-nationale",
+    "agents-securite-competences",
+    "videosurveillance-entreprise",
+    "securite-incendie",
+    "controle-acces",
+    "accueil-securise",
+    "securite-chantiers",
+    "protection-rapprochee",
+    "surveillance-commerces",
+    "securite-evenementielle",
+  ];
+
   const routes = [
     {
       url: `${baseUrl}`,
@@ -43,22 +59,13 @@ export default async function sitemap() {
       changeFrequency: "weekly",
       priority: 0.9,
     },
-    {
-      url: `${baseUrl}/blog/protection-rapprochee`,
+    ...blogSlugs.map((slug) => ({
+      url: `${baseUrl}/blog/${slug}`,
       lastModified: currentDate,
       changeFrequency: "monthly",
       priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/blog/surveillance-commerces`,
-      lastModified: currentDate,
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
+    })),
   ];
-
-  // Vous pourriez également ajouter ici une logique pour générer dynamiquement
-  // les URLs de vos articles de blog ou autres pages dynamiques si nécessaire
 
   return routes;
 }

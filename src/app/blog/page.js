@@ -14,6 +14,50 @@ export const metadata = {
 // Articles de blog statiques
 const blogPosts = [
   {
+    id: "syndic-immeuble-securite",
+    title:
+      "Mot du fondateur : accompagner les syndics d'immeuble à Genève",
+    excerpt:
+      "Sidnei Ribeiro partage sa vision personnelle de l'accompagnement des syndics et régies immobilières à Genève. Un partenariat de confiance au service des copropriétés.",
+    date: "28 avril 2026",
+    category: "Mot du fondateur",
+    image: "/images/sidnei-ribeiro2.jpg",
+    slug: "syndic-immeuble-securite",
+  },
+  {
+    id: "surveillance-immeubles-geneve",
+    title:
+      "Surveillance d'immeubles à Genève : rondes, vidéosurveillance et gardiennage",
+    excerpt:
+      "Découvrez les solutions de surveillance adaptées aux régies et copropriétés genevoises. Rondes, vidéosurveillance et gardiennage pour une tranquillité optimale.",
+    date: "22 avril 2026",
+    category: "Surveillance résidentielle",
+    image: "/images/agent-ronde.png",
+    slug: "surveillance-immeubles-geneve",
+  },
+  {
+    id: "conciergerie-securisee-coproprietes",
+    title:
+      "Conciergerie sécurisée pour copropriétés : la solution moderne",
+    excerpt:
+      "La conciergerie sécurisée allie service de proximité et sécurité professionnelle. Une formule moderne très appréciée des résidents et des syndics genevois.",
+    date: "15 avril 2026",
+    category: "Conciergerie & Service",
+    image: "/images/agent2.webp",
+    slug: "conciergerie-securisee-coproprietes",
+  },
+  {
+    id: "securite-parkings-immeubles",
+    title:
+      "Sécurité des parkings d'immeubles : prévenir vols et incivilités",
+    excerpt:
+      "Comment sécuriser efficacement le parking de votre copropriété à Genève. Solutions concrètes pour syndics : contrôle d'accès, vidéosurveillance et rondes.",
+    date: "8 avril 2026",
+    category: "Parking & Garage",
+    image: "/images/controle-acces.png",
+    slug: "securite-parkings-immeubles",
+  },
+  {
     id: "securite-fetes-noel",
     title: "Sécurité pendant les fêtes de Noël : célébrer en toute sérénité",
     excerpt:
