@@ -14,6 +14,28 @@ export const metadata = {
 // Articles de blog statiques
 const blogPosts = [
   {
+    id: "histoires-syndics-coproprietes-geneve",
+    title:
+      "Histoires de copropriétés : 3 syndics genevois racontent",
+    excerpt:
+      "Trois récits authentiques de syndics genevois qui ont transformé leur copropriété avec SAR Security. Sérénité, lien social et résidents satisfaits.",
+    date: "18 mai 2026",
+    category: "Récits & témoignages",
+    image: "/images/agent2.webp",
+    slug: "histoires-syndics-coproprietes-geneve",
+  },
+  {
+    id: "immersion-24h-agent-immeuble",
+    title:
+      "Immersion 24h avec un agent SAR en immeuble à Genève",
+    excerpt:
+      "Reportage immersif dans le quotidien d'un agent SAR Security au cœur d'une copropriété genevoise. Découvrez les petits riens qui changent tout.",
+    date: "11 mai 2026",
+    category: "Reportage",
+    image: "/images/agent-ronde.png",
+    slug: "immersion-24h-agent-immeuble",
+  },
+  {
     id: "syndic-immeuble-securite",
     title:
       "Mot du fondateur : accompagner les syndics d'immeuble à Genève",
