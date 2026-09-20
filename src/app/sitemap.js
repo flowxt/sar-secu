@@ -3,6 +3,8 @@ export default async function sitemap() {
   const currentDate = new Date();
 
   const blogSlugs = [
+    "voter-projet-securite-assemblee-generale",
+    "copropriete-automne-hiver-serenite",
     "histoires-syndics-coproprietes-geneve",
     "immersion-24h-agent-immeuble",
     "syndic-immeuble-securite",

@@ -14,6 +14,28 @@ export const metadata = {
 // Articles de blog statiques
 const blogPosts = [
   {
+    id: "voter-projet-securite-assemblee-generale",
+    title:
+      "Faire voter un projet de sécurité en assemblée générale de copropriété",
+    excerpt:
+      "Guide pratique pour les syndics : méthode, arguments et bonnes pratiques pour présenter et faire adopter un projet de sécurité en assemblée générale à Genève.",
+    date: "22 septembre 2026",
+    category: "Gestion de copropriété",
+    image: "/images/agent4.png",
+    slug: "voter-projet-securite-assemblee-generale",
+  },
+  {
+    id: "copropriete-automne-hiver-serenite",
+    title:
+      "Préparer sa copropriété pour l'automne-hiver : la checklist du syndic",
+    excerpt:
+      "Checklist pratique pour les syndics genevois : éclairage, accès, entretien et présence de proximité pour aborder l'automne et l'hiver en toute sérénité.",
+    date: "8 septembre 2026",
+    category: "Entretien & prévention",
+    image: "/images/controle-maison.png",
+    slug: "copropriete-automne-hiver-serenite",
+  },
+  {
     id: "histoires-syndics-coproprietes-geneve",
     title:
       "Histoires de copropriétés : 3 syndics genevois racontent",
