@@ -14,6 +14,26 @@ export const metadata = {
 // Articles de blog statiques
 const blogPosts = [
   {
+    id: "vacances-scolaires-gestion-absences",
+    title: "Vacances scolaires : vos absences, notre attention",
+    excerpt:
+      "Au retour des vacances d'automne, Sidnei Ribeiro raconte comment SAR Security veille sur les logements des familles genevoises, et comment préparer les prochains congés.",
+    date: "25 octobre 2026",
+    category: "Vacances & absences",
+    image: "/images/sar-sid.jpg",
+    slug: "vacances-scolaires-gestion-absences",
+  },
+  {
+    id: "vacances-automne-partir-serein",
+    title: "Vacances d'automne : partez l'esprit léger",
+    excerpt:
+      "Pendant les vacances scolaires, nos agents passent régulièrement vérifier votre logement. Rondes sur mesure, comptes rendus et checklist avant le départ.",
+    date: "10 octobre 2026",
+    category: "Vacances & absences",
+    image: "/images/sar-ronde.jpg",
+    slug: "vacances-automne-partir-serein",
+  },
+  {
     id: "voter-projet-securite-assemblee-generale",
     title:
       "Faire voter un projet de sécurité en assemblée générale de copropriété",

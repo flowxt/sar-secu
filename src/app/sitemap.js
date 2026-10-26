@@ -3,6 +3,8 @@ export default async function sitemap() {
   const currentDate = new Date();
 
   const blogSlugs = [
+    "vacances-scolaires-gestion-absences",
+    "vacances-automne-partir-serein",
     "voter-projet-securite-assemblee-generale",
     "copropriete-automne-hiver-serenite",
     "histoires-syndics-coproprietes-geneve",
