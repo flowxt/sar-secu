@@ -14,6 +14,26 @@ export const metadata = {
 // Articles de blog statiques
 const blogPosts = [
   {
+    id: "choisir-societe-securite-geneve",
+    title: "Comment choisir sa société de sécurité à Genève",
+    excerpt:
+      "Autorisations, assurance, formation des agents, devis, rapports : les 7 critères essentiels pour choisir un prestataire de sécurité en toute confiance.",
+    date: "11 novembre 2026",
+    category: "Guide & conseils",
+    image: "/images/agent-securite.jpg",
+    slug: "choisir-societe-securite-geneve",
+  },
+  {
+    id: "soiree-entreprise-fin-annee",
+    title: "Soirée d'entreprise de fin d'année : place à la fête",
+    excerpt:
+      "Accueil des invités, vestiaire, voiturier et fin de soirée soignée : comment organiser une soirée d'entreprise réussie où l'organisateur profite aussi.",
+    date: "6 novembre 2026",
+    category: "Événementiel d'entreprise",
+    image: "/images/sidnei-garde.jpg",
+    slug: "soiree-entreprise-fin-annee",
+  },
+  {
     id: "vacances-scolaires-gestion-absences",
     title: "Vacances scolaires : vos absences, notre attention",
     excerpt:

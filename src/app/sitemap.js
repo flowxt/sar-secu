@@ -3,6 +3,8 @@ export default async function sitemap() {
   const currentDate = new Date();
 
   const blogSlugs = [
+    "choisir-societe-securite-geneve",
+    "soiree-entreprise-fin-annee",
     "vacances-scolaires-gestion-absences",
     "vacances-automne-partir-serein",
     "voter-projet-securite-assemblee-generale",
